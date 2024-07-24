@@ -2,8 +2,8 @@ import analyzer
 
 
 def main():
+    analyzer.run()
 
-    analyzer.welcomeText()
 
 if __name__ == '__main__':
     main()

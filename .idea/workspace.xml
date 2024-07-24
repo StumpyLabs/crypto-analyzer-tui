@@ -4,9 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dca876f5-2099-4080-b095-72acf21d0f43" name="Changes" comment="first push">
-      <change beforePath="$PROJECT_DIR$/Texts/continuationAccepted" beforeDir="false" afterPath="$PROJECT_DIR$/Texts/continuationAccepted" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Texts/continuationAsked" beforeDir="false" />
+    <list default="true" id="dca876f5-2099-4080-b095-72acf21d0f43" name="Changes" comment="update text">
+      <change afterPath="$PROJECT_DIR$/analyzerHelpers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Texts/continuationDenied" beforeDir="false" afterPath="$PROJECT_DIR$/Texts/closing.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Texts/welcome.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Texts/welcome.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/analyzer.py" beforeDir="false" afterPath="$PROJECT_DIR$/analyzer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/analyzerHelper.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +69,7 @@
     "Python.main.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "/home/casey/PycharmProjects/crypto-analyzer-base/Texts",
+    "last_opened_file_path": "/home/casey/PycharmProjects/crypto-analyzer-base",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -76,6 +81,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/Texts" />
     </key>
   </component>
@@ -124,7 +130,7 @@
       <workItem from="1721761373936" duration="1708000" />
       <workItem from="1721764658423" duration="110000" />
       <workItem from="1721789610870" duration="2290000" />
-      <workItem from="1721849433982" duration="1067000" />
+      <workItem from="1721849433982" duration="9030000" />
     </task>
     <task id="LOCAL-00001" summary="first push">
       <option name="closed" value="true" />
@@ -142,7 +148,15 @@
       <option name="project" value="LOCAL" />
       <updated>1721850245807</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="update text">
+      <option name="closed" value="true" />
+      <created>1721850713620</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1721850713620</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -150,9 +164,10 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first push" />
-    <option name="LAST_COMMIT_MESSAGE" value="first push" />
+    <MESSAGE value="update text" />
+    <option name="LAST_COMMIT_MESSAGE" value="update text" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/crypto_analyzer_base$main.coverage" NAME="main Coverage Results" MODIFIED="1721849479512" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/crypto_analyzer_base$main.coverage" NAME="main Coverage Results" MODIFIED="1721857849380" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

@@ -1,4 +1,11 @@
-# open and print welcome message
-def welcomeText():
-    welcome_txt = open("Texts/welcome.txt", "r").read()
-    print(welcome_txt)
+import analyzerHelpers
+
+
+def run():
+    # welcome text
+    analyzerHelpers.welcomeText()
+
+    # customer input
+    customerInput = analyzerHelpers.inputBuilder()
+
+    # build coingecko dictionary

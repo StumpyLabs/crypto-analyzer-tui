@@ -10,4 +10,3 @@ pc: price change in past 24 hrs
 v: volume
 vc: volume change in past 24 hrs
 q: quit
-
