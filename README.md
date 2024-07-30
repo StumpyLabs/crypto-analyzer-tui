@@ -1,4 +1,4 @@
-# crypto-analyzer-base
+# crypto-analyzer-tui
 Find top 10 crypto marketcap, 
 price, price change in 24 hrs, 
 volume utilizing coingecko api
