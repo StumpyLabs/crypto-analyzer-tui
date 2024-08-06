@@ -1,4 +1,6 @@
 import analyzerHelpers
+import coingeckoCalls
+import coingeckoHelper
 
 
 def run():
@@ -8,4 +10,10 @@ def run():
     # customer input
     customerInput = analyzerHelpers.inputBuilder()
 
-    # build coingecko dictionary
+    # continuation until quit
+    while customerInput != "q":
+        # continuation text
+        analyzerHelpers.continuationText()
+
+        # customer input
+        customerInput = analyzerHelpers.inputBuilder()
