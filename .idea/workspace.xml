@@ -4,7 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dca876f5-2099-4080-b095-72acf21d0f43" name="Changes" comment="update text" />
+    <list default="true" id="dca876f5-2099-4080-b095-72acf21d0f43" name="Changes" comment="update text">
+      <change afterPath="$PROJECT_DIR$/Texts/welcomeChoices.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Texts/availableCoins.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Texts/continuation.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Texts/continuation.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Texts/listBuilderOutput.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Texts/welcome.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Texts/welcome.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/analyzer.py" beforeDir="false" afterPath="$PROJECT_DIR$/analyzer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/analyzerHelpers.py" beforeDir="false" afterPath="$PROJECT_DIR$/analyzerHelpers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coingeckoCalls.py" beforeDir="false" afterPath="$PROJECT_DIR$/coingeckoCalls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coingeckoHelper.py" beforeDir="false" afterPath="$PROJECT_DIR$/coingeckoHelper.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pandasCalls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pandasHelper.py" beforeDir="false" afterPath="$PROJECT_DIR$/pandasHelper.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -47,34 +61,38 @@
     &quot;repository&quot;: &quot;crypto-analyzer-base&quot;
   }
 }</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file:///usr/lib/python3.12/site-packages/pandas/core/frame.py" root0="SKIP_INSPECTION" />
+    <setting file="file:///usr/lib/python3.12/site-packages/pandas/core/internals/construction.py" root0="SKIP_INSPECTION" />
+  </component>
   <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 7
+  &quot;associatedIndex&quot;: 4
 }</component>
   <component name="ProjectId" id="2jexLDaLVyY0WHxSC1rAETXm75a" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;Python.main.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/casey/PycharmProjects/crypto-analyzer-tui&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Python.main.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/home/casey/PycharmProjects/crypto-analyzer-tui/Texts",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/Texts" />
+      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="RunManager">
@@ -134,7 +152,9 @@
       <workItem from="1722710129140" duration="10962000" />
       <workItem from="1722878331169" duration="14977000" />
       <workItem from="1722908738818" duration="4186000" />
-      <workItem from="1722923000935" duration="5783000" />
+      <workItem from="1722923000935" duration="6332000" />
+      <workItem from="1722980217686" duration="1037000" />
+      <workItem from="1723176998006" duration="15407000" />
     </task>
     <task id="LOCAL-00001" summary="first push">
       <option name="closed" value="true" />
@@ -168,7 +188,15 @@
       <option name="project" value="LOCAL" />
       <updated>1722928783734</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="update text">
+      <option name="closed" value="true" />
+      <created>1722928804269</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1722928804269</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -180,7 +208,7 @@
     <option name="LAST_COMMIT_MESSAGE" value="update text" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/crypto_analyzer_tui$main.coverage" NAME="main Coverage Results" MODIFIED="1722928632805" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/crypto_analyzer_tui$main.coverage" NAME="main Coverage Results" MODIFIED="1723192629582" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/crypto_analyzer_base$main.coverage" NAME="main Coverage Results" MODIFIED="1721857849380" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

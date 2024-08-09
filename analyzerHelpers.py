@@ -1,9 +1,16 @@
 # open and print welcome message
+import time
+
 import coingeckoCalls
 
 
 def welcomeText():
     welcome_txt = open("Texts/welcome.txt", "r").read()
+    print(welcome_txt)
+
+
+def welcomeChoicesText():
+    welcome_txt = open("Texts/welcomeChoices.txt", "r").read()
     print(welcome_txt)
 
 
@@ -21,9 +28,8 @@ def closingText():
 
 # customer input
 def inputBuilder():
-
     print("Insert Choice below" + "\n"
-          + "eg: mc, p, pc, v, vc, q" + "\n")
+          + "eg: mc, p, pc, v, al, ah, q" + "\n")
     customerInput = input("Enter Here: ")
     closingChecker(customerInput)
     inputChecker(customerInput)
@@ -31,13 +37,12 @@ def inputBuilder():
 
 # check customer input
 def inputChecker(CustomerChoice):
-
-    while CustomerChoice not in ['mc', 'p', 'pc', 'v', 'vc', 'q']:
-        print("\n" + "Please enter either 'mc', 'p', 'pc', 'v', 'vc', 'q'")
+    while CustomerChoice not in ['mc', 'p', 'pc', 'v', 'al', 'ah', 'q']:
+        print("\n" + "Please enter either 'mc', 'p', 'pc', 'v', 'al', 'ah', 'q'")
         CustomerChoice = input("Enter your choice: ")
         closingChecker(CustomerChoice)
     coingeckoCalls.runCoingecko(CustomerChoice)
-
+    time.sleep(5)
 
 
 # closing statement

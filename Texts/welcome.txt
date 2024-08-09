@@ -1,13 +1,4 @@
 Welcome to StumpyLabs Crypto Analyzer
 
-Here you can check the crypto markets top 10 current market cap,
-price, price change in last 24 hours, and volume
-
-To get started type category in which you would like to discover:
-
-mc: market cap
-p: price
-pc: price change in past 24 hrs
-v: volume
-vc: volume change in past 24 hrs
-q: quit
+Here you can check the crypto markets top 100 coins by current market cap,
+price, price change in the last 24 hours, volume, all-time low, all-time high

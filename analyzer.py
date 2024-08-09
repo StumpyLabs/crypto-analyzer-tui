@@ -1,11 +1,19 @@
+import os
 import analyzerHelpers
-import coingeckoCalls
-import coingeckoHelper
+
+import time
 
 
 def run():
     # welcome text
     analyzerHelpers.welcomeText()
+
+    time.sleep(12)
+
+    # welcome choices
+    analyzerHelpers.welcomeChoicesText()
+
+    time.sleep(8)
 
     # customer input
     customerInput = analyzerHelpers.inputBuilder()
