@@ -55,25 +55,15 @@ Usage
 
 Features
 
-    Feature 1: Discover .
-    Feature 2: Describe another great feature.
-    Feature 3: Yet another cool feature.
+    Feature 1: Discover customized dataframes for each category chosen.
+    Feature 2: Instant accss without any delay from coingecko api.
+    Feature 3: Only discovering top 100 market caps rather than the whole market where risk increases.
 
-Configuration
 
-To configure the project, modify the config.yaml file located in the config/ directory. The file should look something like this:
-
-yaml
-
-setting_1: value1
-setting_2: value2
-setting_3:
-  - sub_value1
-  - sub_value2
 
 Contributing
 
-Contributions are welcome! Please follow these steps:
+    Contributions are welcome! Please follow these steps:
 
     Fork the project.
     Create your feature branch (git checkout -b feature/AmazingFeature).
@@ -81,24 +71,17 @@ Contributions are welcome! Please follow these steps:
     Push to the branch (git push origin feature/AmazingFeature).
     Open a pull request.
 
-Please make sure to update tests as appropriate.
 Testing
+    
+    Run the following command to execute the test suite:
 
-Run the following command to execute the test suite:
-
-bash
-
-pytest
+    bash
+    pytest
 
 License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
-Credits
-
-    John Doe - Original author
-    Jane Smith - Contributor
-    Awesome Library - Used for the data processing engine
+    Casey Stumpf - Original author
 
 Contact
 
-If you have any questions, feel free to contact me at stumpf80369@gmail.com.
+    If you have any questions, feel free to contact me at stumpf80369@gmail.com.
