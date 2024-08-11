@@ -1,11 +1,11 @@
-import coingeckoHelper
+import coingecko
 import pandas as pd
 import json
 from IPython.core.display_functions import display
 
 
 def grabGecko():
-    data = coingeckoHelper.marketCapDec()
+    data = coingecko.marketCapDec()
     data = json.loads(data)
     return data
 
@@ -25,7 +25,7 @@ def mc():
 
     df.rename(columns={'id': 'Coin',
                        'market_cap_rank': 'Market Cap Rank',
-                       'market_cap': 'Market Cap'}, inplace=True)
+                       'market_cap': '  Market Cap'}, inplace=True)
 
     display(df.to_string(index=False))
 
@@ -44,7 +44,7 @@ def p():
     df["current_price"] = df["current_price"].apply(lambda x: '${:,.2f}'.format(x))
 
     df.rename(columns={'id': 'Coin',
-                       'current_price': 'Current Price'}, inplace=True)
+                       'current_price': '   Current Price'}, inplace=True)
 
     display(df.to_string(index=False))
 
@@ -67,9 +67,8 @@ def pc():
     df["price_change_percentage_24h"] = df["price_change_percentage_24h"].apply(lambda x: '%{:,.4f}'.format(x))
 
     df.rename(columns={'id': 'Coin',
-                       'price_change_percentage_24h': 'Price Change 24hrs',
-                       'current_price': 'Current Price'}, inplace=True)
-
+                       'price_change_percentage_24h': ' Price Change 24hrs',
+                       'current_price': '   Current Price'}, inplace=True)
 
     display(df.to_string(index=False))
 
@@ -89,7 +88,7 @@ def v():
 
     # rename columns
     df.rename(columns={'id': 'Coin',
-                       'total_volume': 'Total Volume'}, inplace=True)
+                       'total_volume': '    Total Volume'}, inplace=True)
 
     display(df.to_string(index=False))
 
@@ -100,8 +99,12 @@ def al():
     data = grabGecko()
 
     # build data frame and sort
-    df = pd.DataFrame(data, columns=['id', 'atl', 'atl_change_percentage', 'atl_date'])
+    df = pd.DataFrame(data, columns=['id', 'current_price', 'atl', 'atl_change_percentage', 'atl_date'])
     df = df.sort_values(['atl_change_percentage'], ascending=False)
+
+    # change format current_price
+    df["current_price"] = pd.to_numeric(df["current_price"], errors='coerce')
+    df["current_price"] = df["current_price"].apply(lambda x: '${:,.10f}'.format(x))
 
     # change format atl
     df["atl"] = pd.to_numeric(df["atl"], errors='coerce')
@@ -116,9 +119,9 @@ def al():
     df["atl_date"] = df["atl_date"].dt.strftime('%b-%d-%Y')
 
     # rename columns
-    df.rename(columns={'id': 'Coin', 'atl': 'ATL',
-                       'atl_change_percentage': 'ATL % Change',
-                       'atl_date': 'ATL Date'}, inplace=True)
+    df.rename(columns={'id': 'Coin', 'current_price': ' Current Price',
+                       'atl': ' All Time Low', 'atl_change_percentage': '  ATL % Change',
+                       'atl_date': '    ATL Date'}, inplace=True)
 
     display(df.to_string(index=False))
 
@@ -129,8 +132,12 @@ def ah():
     data = grabGecko()
 
     # build data frame and sort
-    df = pd.DataFrame(data, columns=['id', 'ath', 'ath_change_percentage', 'ath_date'])
+    df = pd.DataFrame(data, columns=['id', 'current_price', 'ath', 'ath_change_percentage', 'ath_date'])
     df = df.sort_values(['ath_change_percentage'], ascending=False)
+
+    # change format current_price
+    df["current_price"] = pd.to_numeric(df["current_price"], errors='coerce')
+    df["current_price"] = df["current_price"].apply(lambda x: '${:,.6f}'.format(x))
 
     # change format ath
     df["ath"] = pd.to_numeric(df["ath"], errors='coerce')
@@ -145,8 +152,8 @@ def ah():
     df["ath_date"] = df["ath_date"].dt.strftime('%b-%d-%Y')
 
     # rename columns
-    df.rename(columns={'id': 'Coin','ath': 'ATH',
-                       'ath_change_percentage': 'ATH % Change',
-                       'ath_date': 'ATH Date'}, inplace=True)
+    df.rename(columns={'id': 'Coin', 'current_price': ' Current Price',
+                       'ath': ' All Time High', 'ath_change_percentage': '  ATH % Change',
+                       'ath_date': '    ATH Date'}, inplace=True)
 
     display(df.to_string(index=False))

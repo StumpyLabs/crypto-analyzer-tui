@@ -1,27 +1,70 @@
-import os
-import analyzerHelpers
-
+import coingecko
 import time
 
 
 def run():
     # welcome text
-    analyzerHelpers.welcomeText()
-
-    time.sleep(12)
+    welcomeText()
+    time.sleep(10)
 
     # welcome choices
-    analyzerHelpers.welcomeChoicesText()
-
+    welcomeChoicesText()
     time.sleep(8)
 
-    # customer input
-    customerInput = analyzerHelpers.inputBuilder()
+    # repeat builder until quit
+    inputBuilder()
+
+
+# customer input
+def inputBuilder():
+    print("Insert Choice below" + "\n"
+          + "eg: mc, p, pc, v, al, ah, q" + "\n")
+    customerInput = input("Enter Here: ")
+    closingChecker(customerInput)
+    inputChecker(customerInput)
 
     # continuation until quit
     while customerInput != "q":
         # continuation text
-        analyzerHelpers.continuationText()
+        continuationText()
 
         # customer input
-        customerInput = analyzerHelpers.inputBuilder()
+        inputBuilder()
+
+
+# check customer input
+def inputChecker(CustomerChoice):
+    while CustomerChoice not in ['mc', 'p', 'pc', 'v', 'al', 'ah', 'q']:
+        print("\n" + "Please enter either 'mc', 'p', 'pc', 'v', 'al', 'ah', 'q'")
+        CustomerChoice = input("Enter your choice: ")
+        closingChecker(CustomerChoice)
+    coingecko.runCoingecko(CustomerChoice)
+
+
+# closing statement
+def closingChecker(CustomerChoice):
+    if CustomerChoice == 'q':
+        closingText()
+        quit()
+
+
+def welcomeText():
+    welcome_txt = open("Texts/welcome.txt", "r").read()
+    print(welcome_txt)
+
+
+def welcomeChoicesText():
+    welcome_txt = open("Texts/welcomeChoices.txt", "r").read()
+    print(welcome_txt)
+
+
+# open and print continuation message
+def continuationText():
+    welcome_txt = open("Texts/continuation.txt", "r").read()
+    print("\n" + welcome_txt)
+
+
+# open and print closing message
+def closingText():
+    welcome_txt = open("Texts/closing.txt", "r").read()
+    print(welcome_txt)
